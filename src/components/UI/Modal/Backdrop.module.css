@@ -1,0 +1,42 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.backdrop button {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  font-size: 27px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.backdrop button:first-of-type {
+  left: 10px;
+}
+
+.backdrop button:nth-last-of-type(1) {
+  right: 10px;
+}
+
+.backdrop .length {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem;
+  color: #fff;
+}
